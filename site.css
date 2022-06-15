@@ -1,0 +1,759 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    padding: 0 10px;
+}
+#top {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    overflow: hidden;
+    position: relative;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+.wave .shape-fill {
+    fill: aliceblue;
+}
+
+ 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 60px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav .logo {
+    color: orangered;
+}
+
+.nav .logo h1{
+    font-size: 10px;
+    font-weight: 800;
+}
+.list {
+    gap: 5px;
+}
+
+.list a {
+    font-size: 6px;
+    font-weight: 600;
+    color: rgb(3, 3, 119);
+    text-decoration: none;
+}
+.list li {
+    list-style: none;
+}
+.list li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background-color: orangered;
+    display: block;
+    transition: 0.3s;
+}
+.list li:hover::after {
+    width: 100%;
+}
+.btn button {
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 6px;
+    padding: 5px 5px;
+    background-color: white;
+}
+
+.miju-things {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.miju-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.miju-write {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.miju-head h1{
+    font-size: 17px;
+    font-weight: 800;
+}
+.miju-mini-write {
+    font-size: 8px;
+}
+
+.miju-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.miju-btn .btn1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 5px;
+}
+.btn1 button {
+    background-color: transparent;
+    border: none;
+    font-size: 8px;
+}
+.btn1 img {
+    width: 10px;
+}
+
+.miju-btn .btn1:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.miju-btn .btn2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    border: none;
+    padding: 0px 5px;
+}
+.btn2 button {
+    background-color: transparent;
+    border: none;
+    font-size: 8px;
+}
+.btn2 img {
+    width: 10px;
+}
+
+.miju-btn .btn2:hover {
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+.miju-loved {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.miju-loved h3 {
+    font-weight: 800;
+}
+
+.miju-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+.miju-loved h3{
+    font-size: 12px;
+}
+
+.miju-features .awesome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+.miju-features .awesome img {
+    width: 50px;
+}
+
+.miju-features .video-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.miju-features .video-chat img {
+    width: 50px;
+}
+
+.miju-features .conference-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+.miju-features .conference-call img {
+    width: 50px;
+}
+
+.miju-features h3 {
+    font-size: 8px;
+}
+
+.miju-features p{
+    font-size: 5px;
+}
+
+.browse-btn button {
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 8px;
+    padding: 5px 5px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+
+
+
+#middle {
+    position: relative;
+}
+.miju-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to bottom, aliceblue 70%, lightpink);
+    margin-top: 20px;
+    gap: 10px;
+}
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.wave2 svg {
+    display: block;
+    height: 100%;
+}
+.wave2 .shape-fill2 {
+    fill: lightpink;
+}
+
+
+.middle-write {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.middle-write h5 {
+    color: orangered;
+    font-size: 8px;
+}
+.middle-bighead {
+    font-size: 10px;
+}
+
+.paragraph p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.middle-btn button{
+    margin-top: 10px;
+    border: 1px solid rgb(0, 0, 149);
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.middle-btn button:hover {
+    background-color: rgb(0, 0, 149);
+    color: white;
+}
+
+
+
+
+
+
+
+
+#last-part {
+    background-color: white;
+    padding: 80px 0;
+    position: relative;
+}
+
+.last-part {
+    display: flex;
+    flex-direction: row;
+    padding: 0 30px;
+    background-color: white;
+    position: relative;
+}
+
+.last-part .head {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 5px;
+}
+.head .app h1 {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 20px;
+}
+.last-paragraph {
+    font-size: 10px;
+}
+
+.head2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 10px;
+    gap: 10px;
+}
+
+.head2 .awesome2 img {
+    width: 50px;
+}
+
+.head2 h3{
+    font-size: 8px;
+}
+.head2 p {
+    font-size: 8px;
+}
+
+.last-btn button {
+    background-color: orangered;
+    width: 100px;
+    height: 20px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 10px;
+    color: white;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 5px;
+}
+
+.statistics .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgb(203, 228, 251) , rgb(251, 173, 186, 0.3));
+    padding: 5px 15px;
+    border-radius: 15px;
+    gap: 10px;
+    text-align: center;
+}
+
+.active hr {
+    border: none;
+    height: 2px;
+    width: 8px;
+    background-color: orangered;
+}
+.active h4{
+    font-size: 12px;
+}
+
+.active p{
+    font-size: 8px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+    #top {
+        padding: 20px 80px;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    
+     
+    .nav {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .nav .logo h1{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .list {
+        gap: 8px;
+    }
+    
+    .list a {
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(3, 3, 119);
+        text-decoration: none;
+    }  
+
+    .list li:hover::after {
+        width: 100%;
+    }
+    .btn button {
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 10px;
+        padding: 5px 5px;
+        background-color: white;
+    }
+    
+    .miju-things {
+        margin-top: 80px;
+    }
+    
+    
+    .miju-write {
+        gap: 10px;
+    }
+    .miju-mini-write {
+        font-size: 20px;
+    }
+    .miju-head h1{
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .miju-img img {
+        width: 350px;
+    } 
+    
+    .miju-btn {
+        gap: 10px;
+    }
+    
+    .miju-btn .btn1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: orangered;
+        width: 80px;
+        height: 25px;
+        border-radius: 15px;
+        border: none;
+        padding: 0 10px;
+    }
+    .btn1 button {
+        background-color: transparent;
+        border: none;
+        font-size: 10px;
+    }
+    .btn1 img {
+        width: 15px;
+    }
+    
+    
+    
+    .miju-btn .btn2 {
+        background-color: orangered;
+        width: 80px;
+        height: 25px;
+        border-radius: 15px;
+        border: none;
+        padding: 0 10px;
+    }
+    .btn2 button {
+        font-size: 10px;
+    }
+    
+    .btn2 img {
+        width: 15px;
+    }
+    
+    
+    
+
+
+
+
+    .miju-loved {
+        margin-top: 60px;
+    }
+    
+    .miju-loved h3 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    .miju-features {
+        gap: 40px;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .miju-features .awesome img {
+        width: 100px;
+    }
+
+    .miju-features .awesome p{
+        font-size: 15px;
+    }
+
+    .miju-features .video-chat p{
+        font-size: 15px;
+    }
+
+    .miju-features .conference-call img {
+        width: 100px;
+    }
+
+
+    .miju-features .conference-call p{
+        font-size: 15px;
+    }
+    
+    .miju-features .awesome {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .miju-features .video-chat {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .miju-features .video-chat img {
+        width: 100px;
+    }
+    
+    .miju-features .conference-call {
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .miju-features h3 {
+        font-size: 15px;
+    }
+    
+    .browse-btn button {
+        color: orangered;
+        border: 1px solid orangered;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 10px;
+        padding: 5px 5px;
+        background-color: white;
+        margin-top: 50px;
+    }
+    
+    
+
+
+
+
+
+    
+    
+    
+    .miju-middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 40px;
+        background: linear-gradient(to bottom, aliceblue 70%, lightpink);
+        margin-top: 20px;
+        gap: 30px;
+    }
+    
+    
+    .middle-write {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .middle-img img {
+        width: 350px;
+    }
+    
+    .middle-write h5 {
+        color: orangered;
+    }
+    .middle-bighead h1{
+        font-size: 30px;
+    }
+    
+    .paragraph {
+        margin-top: 10px;
+    }
+    .paragraph p {
+        font-size: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .last-part {
+        padding: 0 120px;
+    }
+    
+    .last-part .head {
+        margin-top: 25px;
+        gap: 30px;
+    }
+    .head .app h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 30px;
+    }
+    .last-paragraph p{
+        font-size: 15px;
+    }
+    
+    .head2 {
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    .head2 .awesome2 img {
+        width: 100px;
+    }
+    .head2 .awesome2 h3 {
+        font-size: 15px;
+    }
+    .head2 .awesome2 p {
+        font-size: 12px;
+        width: 150px;
+    }
+    
+    
+    
+    .last-btn button {
+        background-color: orangered;
+        width: 120px;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        padding: 0 10px;
+        color: white;
+    }
+    
+    
+    
+    
+    
+    .statistics {
+        margin-top: 80px;
+        gap: 30px;
+    }
+    
+    .statistics .active {
+        width: 80px;
+        height: 120px;
+        padding: 5px 15px;
+        border-radius: 15px;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .active hr {
+        border: none;
+        height: 3px;
+        width: 10px;
+        background-color: orangered;
+    }
+    .active p{
+        font-size: 12px;
+    }
+    .active h4 {
+        font-weight: 800;
+    }
+}
+
+
